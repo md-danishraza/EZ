@@ -4,10 +4,9 @@ import styled from "styled-components";
 const desktopBreakpoint = "1024px";
 
 export const AboutSection = styled.section`
-  /* min-height: calc(100vh - var(--nav-height)); */
-  min-height: 80vh;
-
-  padding: 2rem 2rem;
+  min-height: calc(100vh - var(--nav-height));
+  /* overflow-y: hidden; */
+  padding: 0rem 2rem;
 
   /* Mobile-first: stack everything */
   display: flex;
@@ -44,7 +43,7 @@ export const RightColumn = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20rem 0;
+  padding: 21rem 0;
   position: relative;
   @media (min-width: ${desktopBreakpoint}) {
     padding: 0;
@@ -57,9 +56,9 @@ export const ParaClipImage = styled.img`
   top: 4rem;
   right: 2rem;
   position: absolute;
-  z-index: 1;
 
   @media (min-width: ${desktopBreakpoint}) {
+    z-index: 1005;
     width: 120%;
     position: absolute;
     top: -4rem;
@@ -73,8 +72,11 @@ export const IndiaGateImage = styled.img`
   max-width: 300px;
 
   position: absolute;
-  bottom: -35rem;
+  bottom: -5rem;
 
+  @media (min-width: 540px) {
+    bottom: -15rem;
+  }
   @media (min-width: ${desktopBreakpoint}) {
     position: absolute;
     bottom: -4rem;
@@ -85,7 +87,7 @@ export const IndiaGateImage = styled.img`
 `;
 
 export const TeamImageWrapper = styled.div`
-  width: 120%;
+  width: 100%;
   max-width: 800px;
   margin-bottom: 2rem;
   position: relative;
@@ -113,7 +115,7 @@ export const TeamImageWrapper = styled.div`
 export const PageTitle = styled.h1`
   font-family: var(--secondaryFont, "Island Moments");
   color: var(--black);
-  font-size: 2.2rem;
+  font-size: 1rem;
   line-height: 1.3;
   text-align: center;
   margin-bottom: 1.5rem;

@@ -5,9 +5,10 @@ const tabletBreakpoint = "768px";
 const desktopBreakpoint = "1024px";
 
 export const HeroSection = styled.section`
-  min-height: calc(
+  /* min-height: calc(
     100vh - var(--nav-height)
-  ); /* Full viewport height minus navbar */
+  );  */
+  min-height: 80vh;
   display: flex; /* flex for smaller screens */
   flex-direction: column; /* Stack vertically on mobile */
   align-items: center;
