@@ -6,8 +6,9 @@ const AppContainer = styled.div`
 
 const PageContent = styled.main`
   padding: 20px;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
+  margin-top: 5rem;
 `;
 
 export { AppContainer, PageContent };
