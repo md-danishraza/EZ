@@ -1,5 +1,5 @@
 import React from "react";
-import ServiceHeading from "../../components/serviceHeading";
+import ServiceHeading from "../../components/ServiceHeading";
 import ExploreNowBtn from "../../components/ExploreNowBtn";
 import BackServiceBtn from "../../components/BackServiceBtn";
 
