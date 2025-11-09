@@ -1,7 +1,8 @@
 import React from "react";
-import ServiceHeading from "../../components/ServiceHeading";
+
 import ExploreNowBtn from "../../components/ExploreNowBtn";
 import BackServiceBtn from "../../components/BackServiceBtn";
+import ServiceHeading from "../../components/serviceHeading";
 
 //  assets
 import filmProdCardImg from "../../assets/services/film/filmProd.png";
