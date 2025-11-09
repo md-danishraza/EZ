@@ -5,17 +5,17 @@ const desktopBreakpoint = "1024px";
 export const ContactSection = styled.section`
   position: relative;
   /* min-height: calc(100vh - var(--nav-height)); */
-  height: 100vh;
+  min-height: 100vh;
 
   width: 100%;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
 
   /* Center the content grid */
   display: flex;
   align-items: center;
   justify-content: center;
 
-  overflow: hidden;
+  overflow-x: hidden;
 
   @media (min-width: ${desktopBreakpoint}) {
     padding: 0rem 0rem;
@@ -63,7 +63,7 @@ export const PageTitle = styled.h1`
   font-weight: 500;
   line-height: 1.4;
   max-width: 30rem;
-  margin: 0;
+
   align-self: center;
   text-align: center;
 

@@ -49,7 +49,7 @@ const BaseColumn = styled.div`
 
 export const LeftColumn = styled(BaseColumn)`
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 2rem;
   @media (min-width: ${desktopBreakpoint}) {
     padding-top: 0;
     justify-content: center;
