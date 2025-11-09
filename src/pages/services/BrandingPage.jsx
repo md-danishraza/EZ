@@ -5,10 +5,10 @@ import BackServiceBtn from "../../components/BackServiceBtn";
 
 //  assets
 import brandingImg from "../../assets/services/branding/branding.png";
-import branding1 from "../../assets/services/branding/Branding Vector 01.svg";
-import branding2 from "../../assets/services/branding/Branding Vector 02.svg";
-import branding3 from "../../assets/services/branding/Branding Vector 03.svg";
-import branding4 from "../../assets/services/branding/Branding Vector 04.svg";
+import branding1 from "../../assets/services/branding/brandingVec01.svg";
+import branding2 from "../../assets/services/branding/brandingVec02.svg";
+import branding3 from "../../assets/services/branding/brandingVec03.svg";
+import branding4 from "../../assets/services/branding/brandingVec04.svg";
 
 // ---  Styles ---
 import {

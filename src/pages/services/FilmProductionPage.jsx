@@ -6,10 +6,10 @@ import ServiceHeading from "../../components/ServiceHeading";
 
 //  assets
 import filmProdCardImg from "../../assets/services/film/filmProd.png";
-import camera1 from "../../assets/services/film/Camera 01.svg";
-import camera2 from "../../assets/services/film/Camera 02.svg";
-import camera3 from "../../assets/services/film/Camera 03.svg";
-import camera4 from "../../assets/services/film/Camera 04.svg";
+import camera1 from "../../assets/services/film/camera01.svg";
+import camera2 from "../../assets/services/film/camera02.svg";
+import camera3 from "../../assets/services/film/camera03.svg";
+import camera4 from "../../assets/services/film/camera04.svg";
 
 // ---  Styles ---
 import {

@@ -5,10 +5,10 @@ import BackServiceBtn from "../../components/BackServiceBtn";
 
 //  assets
 import artImg from "../../assets/services/art/art.png";
-import art1 from "../../assets/services/art/Art Curation icons 01.svg";
-import art2 from "../../assets/services/art/Art Curation icons 02.svg";
-import art3 from "../../assets/services/art/Art Curation icons 03.svg";
-import art4 from "../../assets/services/art/Art Curation icons 04.svg";
+import art1 from "../../assets/services/art/artcuration01.svg";
+import art2 from "../../assets/services/art/artcuration02.svg";
+import art3 from "../../assets/services/art/artcuration03.svg";
+import art4 from "../../assets/services/art/artcuration04.svg";
 
 // ---  Styles ---
 import {
