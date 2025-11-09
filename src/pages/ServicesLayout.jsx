@@ -1,6 +1,6 @@
 import { Outlet, useLocation } from "react-router-dom";
-import ServiceHeading from "../components/serviceHeading";
 
+import ServiceHeading from "../components/serviceHeading";
 // Import assets
 import bottomImg from "../assets/services/bottom.svg";
 import filmProdCardImg from "../assets/services/filmProd.png";
