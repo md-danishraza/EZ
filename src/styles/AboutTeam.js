@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-// Use the same breakpoint as your navbar for consistency
 const desktopBreakpoint = "1024px";
 
 export const AboutSection = styled.section`

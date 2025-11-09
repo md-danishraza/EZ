@@ -5,8 +5,9 @@ const desktopBreakpoint = "1024px";
 export const AboutSection = styled.section`
   position: relative;
 
-  min-height: calc(100vh - var(--nav-height));
+  /* min-height: calc(100vh - var(--nav-height)); */
   /* min-height: 85vh; */
+  min-height: 100vh;
   overflow: hidden;
   padding: 0rem 1rem;
   width: 100%;

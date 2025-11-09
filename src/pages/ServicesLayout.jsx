@@ -1,44 +1,54 @@
-import { NavLink, Outlet } from "react-router-dom";
-import styled from "styled-components";
+import { Outlet, useLocation } from "react-router-dom";
+import ServiceHeading from "../components/serviceHeading";
 
-// This is just like the main navbar, but for our sub-menu
-const ServiceNav = styled.nav`
-  display: flex;
-  gap: 1rem;
-  background-color: #f0f0f0;
-  padding: 1rem;
-  margin-bottom: 1rem;
-`;
+// Import assets
+import bottomImg from "../assets/services/bottom.svg";
+import filmProdCardImg from "../assets/services/filmProd.png";
+import brandingCardImg from "../assets/services/branding.png";
+import artCurationCardImg from "../assets/services/artCuration.png";
 
-const ServiceLink = styled(NavLink)`
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-
-  &.active {
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
-  }
-`;
+// styles
+import {
+  ServicesWrapper,
+  CardGrid,
+  CardLink,
+  CardImage,
+  BottomImage,
+} from "../styles/ServicesLayout";
 
 const ServicesLayout = () => {
+  // 1. Get the current location object
+  const location = useLocation();
+  // showing heading and cards when on /services
+  const isServicesHome = location.pathname === "/services";
   return (
-    <div>
-      <h2>Our Services</h2>
-      <p>Select a service to learn more.</p>
+    <ServicesWrapper>
+      {isServicesHome && (
+        <>
+          <ServiceHeading title="The storyboard reveals the breadth of our craft." />
 
-      {/* Sub-navigation for nested routes */}
-      <ServiceNav>
-        <ServiceLink to="/services/film-production">
-          Film Production
-        </ServiceLink>
-        <ServiceLink to="/services/branding">Branding</ServiceLink>
-        <ServiceLink to="/services/art-curation">Art Curation</ServiceLink>
-      </ServiceNav>
+          {/* three cards Images with link */}
+          <CardGrid>
+            <CardLink to="/services/film-production">
+              <CardImage src={filmProdCardImg} alt="Film Production" />
+            </CardLink>
+            <CardLink to="/services/branding">
+              <CardImage src={brandingCardImg} alt="Branding" />
+            </CardLink>
+            <CardLink to="/services/art-curation">
+              <CardImage src={artCurationCardImg} alt="Art Curation" />
+            </CardLink>
+          </CardGrid>
+        </>
+      )}
 
-      {/* This is where the nested child component will be rendered */}
+      {/* nested child pages */}
+
       <Outlet />
-    </div>
+
+      {/*  decorative image */}
+      <BottomImage src={bottomImg} alt="" />
+    </ServicesWrapper>
   );
 };
 
