@@ -13,6 +13,7 @@ import {
   Toast,
   Spinner, // CSS spinner
 } from "../styles/ContactForm";
+import axios from "axios";
 
 const initialState = { name: "", email: "", phone: "", message: "" };
 
@@ -91,16 +92,14 @@ function ContactForm() {
     setErrors({}); // Clear all errors
 
     // console.log(inputs);
-    // 3. --- Mock API Call ---
-    // Replace this with your actual axios.post
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    // Mock a 70% success rate
-    const isSuccess = Math.random() > 0.3;
+    // api request
+    const url = import.meta.env.VITE_API + "/api/contact-us/";
+    const data = await axios.post(url, inputs);
     // -----------------------
-
+    // console.log(data);
     setIsLoading(false);
 
-    if (isSuccess) {
+    if (data.status === 201) {
       // Handle Success
       //   reset input only on success
       setInputs(initialState);

@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "709d64f7-e8a4-4523-805d-77510bf9af16",
+		"name": "varnan-ez",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45559581",
+		"_collection_link": "https://danish-6934898.postman.co/workspace/Danish's-Workspace~d9a6ead3-c26f-4bb9-8037-5dd304d390ee/collection/45559581-709d64f7-e8a4-4523-805d-77510bf9af16?action=share&source=collection_link&creator=45559581"
+	},
+	"item": [
+		{
+			"name": "submitForm",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Test user\",\r\n  \"email\": \"testuser@gmail.com\",\r\n  \"phone\": \"908765498\",\r\n  \"message\": \"This is a message\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/api/contact-us/",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"api",
+						"contact-us",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base",
+			"value": ""
+		}
+	]
+}
