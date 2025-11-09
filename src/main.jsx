@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+// global css
 import "./index.css";
 
 import App from "./App.jsx";
@@ -19,11 +20,10 @@ import ArtCurationPage from "./pages/services/ArtCurationPage";
 // router
 const router = createBrowserRouter([
   {
-    // oot path
+    // root path
     path: "/",
 
     element: <App />,
-    // errorElement: <ErrorPage />,
 
     // Child routes
     children: [

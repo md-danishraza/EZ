@@ -3,14 +3,14 @@ import ServiceHeading from "../../components/serviceHeading";
 import ExploreNowBtn from "../../components/ExploreNowBtn";
 import BackServiceBtn from "../../components/BackServiceBtn";
 
-// Import assets
+//  assets
 import filmProdCardImg from "../../assets/services/film/filmProd.png";
 import camera1 from "../../assets/services/film/Camera 01.svg";
 import camera2 from "../../assets/services/film/Camera 02.svg";
 import camera3 from "../../assets/services/film/Camera 03.svg";
 import camera4 from "../../assets/services/film/Camera 04.svg";
 
-// --- Import Styles ---
+// ---  Styles ---
 import {
   PageWrapper,
   ContentGrid,
@@ -22,7 +22,7 @@ import {
   Camera2,
   Camera3,
   Camera4,
-} from "../../styles/FilmProductionPage"; // We will create this
+} from "../../styles/FilmProductionPage";
 
 function FilmProductionPage() {
   return (
@@ -42,10 +42,9 @@ function FilmProductionPage() {
           <p>
             Who says films are just an escape? We see them as a way to live many
             lives - to feel, to explore, and to tell stories that stay. And with
-            each film, we carry new memories and new reasons to keep creating. V
-            crafts:
+            each film, we carry new memories and new reasons to keep creating.
+            <br />V crafts:
           </p>
-          {/* Moved <ul> outside <p> for valid HTML */}
           <StyledList>
             <li>Documentaries</li>
             <li>Corporate Videos</li>

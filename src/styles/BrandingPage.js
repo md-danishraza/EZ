@@ -30,6 +30,7 @@ export const ContentGrid = styled.div`
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     padding-bottom: 2rem;
+
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -109,7 +110,7 @@ const DecorativeImage = styled.img`
   }
 `;
 
-export const Camera1 = styled(DecorativeImage)`
+export const Branding1 = styled(DecorativeImage)`
   top: 15%;
   left: 0;
   width: 40px;
@@ -121,7 +122,7 @@ export const Camera1 = styled(DecorativeImage)`
   }
 `;
 
-export const Camera2 = styled(DecorativeImage)`
+export const Branding2 = styled(DecorativeImage)`
   top: 0;
   right: 5%;
   width: 50px;
@@ -130,7 +131,7 @@ export const Camera2 = styled(DecorativeImage)`
   }
 `;
 
-export const Camera3 = styled(DecorativeImage)`
+export const Branding3 = styled(DecorativeImage)`
   top: 50%;
   right: 0;
   width: 40px;
@@ -141,7 +142,7 @@ export const Camera3 = styled(DecorativeImage)`
   }
 `;
 
-export const Camera4 = styled(DecorativeImage)`
+export const Branding4 = styled(DecorativeImage)`
   bottom: 10%;
   right: 0%;
   width: 40px;
